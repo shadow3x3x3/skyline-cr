@@ -38,9 +38,3 @@ module Skyline::Cr
     end
   end
 end
-
-
-puts Skyline::Cr.dominate? [1, 2, 3], [2, 3, 4]
-puts Skyline::Cr.dominate? [2, 3, 4], [1, 2, 3]
-puts Skyline::Cr.dominate? [1, 2, 3], [2, 3, 1]
-puts Skyline::Cr.dominate? [2, 2, 3], [2, 3, 4]
