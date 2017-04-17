@@ -2,7 +2,7 @@
 
 Comparing two Array that are multiple attributes with Skyline Query definition.
 
-https://travis-ci.org/shadow3x3x3/skyline-cr.svg?branch=master
+[![Build Status](https://travis-ci.org/shadow3x3x3/skyline-cr.svg?branch=master)](https://travis-ci.org/shadow3x3x3/skyline-cr)
 
 ## Installation
 
