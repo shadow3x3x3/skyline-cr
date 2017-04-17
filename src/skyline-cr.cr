@@ -3,22 +3,20 @@ require "./skyline-cr/*"
 class SkylineException < Exception
 end
 
-module Skyline::Cr
-  extend self
+enum Domination
+  Dominate
+  NonDominate
+  BeDominated
+end
 
-  enum Domination
-    Dominate
-    NonDominate
-    BeDominated
-  end
-
-  def dominate?(attrs1 : Array, attrs2 : Array)
-    if attrs1.size != attrs2.size
+class Array
+  def dominate?(compare_attrs : Array)
+    if size != compare_attrs.size
       raise SkylineException.new("Two Attributes size is not match.")
     end
-    check_size = attrs1.size
+    check_size = size
     check_flag = 0
-    attrs1.zip(attrs2).each do |attr1, attr2|
+    zip(compare_attrs).each do |attr1, attr2|
       case
       when attr1 < attr2
         check_flag -= 1
@@ -34,7 +32,7 @@ module Skyline::Cr
     elsif check_flag == check_size
       return Domination::BeDominated
     else
-      return Domination::NonDominate
+      return nil
     end
   end
 end
