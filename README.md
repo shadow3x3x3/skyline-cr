@@ -2,6 +2,8 @@
 
 Comparing two Array that are multiple attributes with Skyline Query definition.
 
+https://travis-ci.org/shadow3x3x3/skyline-cr.svg?branch=master
+
 ## Installation
 
 Add this to your application's `shard.yml`:
