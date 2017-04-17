@@ -15,7 +15,7 @@ describe Skyline::Cr do
     end
 
     it "Array size not match" do
-      expect_raises(SkylineException, "Two Attributes size is not match.") do
+      expect_raises(SkylineException, "Two Attributes size are not match.") do
         [2, 3, 4].dominate? [1, 2, 3, 1]
       end
     end

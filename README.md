@@ -21,7 +21,7 @@ require "skyline-cr"
 [1, 2, 3].dominate? [2, 3, 4] # => Domination::Dominate
 [1, 2, 3].dominate? [2, 3, 1] # => nil
 [2, 3, 4].dominate? [1, 2, 3] # => Domination::BeDominated
-[2, 3, 4].dominate? [1, 2, 3, 1] # => raise SkylineException "Two Attributes size is not match."
+[2, 3, 4].dominate? [1, 2, 3, 1] # => raise SkylineException "Two Attributes size are not match."
 ```
 
 ## Development

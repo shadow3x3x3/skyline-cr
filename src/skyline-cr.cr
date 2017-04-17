@@ -5,14 +5,14 @@ end
 
 enum Domination
   Dominate
-  NonDominate
+  # NonDominate
   BeDominated
 end
 
 class Array
   def dominate?(compare_attrs : Array)
     if size != compare_attrs.size
-      raise SkylineException.new("Two Attributes size is not match.")
+      raise SkylineException.new("Two Attributes size are not match.")
     end
     check_size = size
     check_flag = 0
